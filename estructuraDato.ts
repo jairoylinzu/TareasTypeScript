@@ -48,6 +48,35 @@ let ciudad1 = tupla[2];
 let estudiante1 = tupla[3];
 console.log(nombre1,edad1,ciudad1,estudiante1);
 
+let diccionario:{[key:string]: any} ={
+  'nombre':{nombre: 'Joel'},
+  'apellido':{apellido: 'Gurumendi'},
+  'edad':{edad:26},
+  'ciudad':{ciudad:'Guayaquil'},
+  'lenguajes':{lenguaje:'go',lenguaje1:'python',lenguaje2:'java', lenguaje3:'javascript'}
+
+};
+
+//console.log(diccionario);
+
+//Para mostrar algún valor guardado en el diccionario si accede a el mediante la llave designada.
+
+console.log(diccionario['lenguajes']);
+
+/*Para modificar un valor con tan solo acceder mediante la llave y luego igualarlo a 
+otro valor sería suficiente para realizar la modificación.*/ 
+
+diccionario['nombre']='Pedro';
+console.log(diccionario);
+//Si deseamos aumentar algún otro elemento, necesitamos crear una nueva llave e igualarla al valor deseado
+diccionario['estudiante']={estudiante:'true'};
+console.log(diccionario);
+
+/*Si deseamos eliminar un elemento con tan solo anteponer la palabra reservada 
+del y luego acceder a la llave podríamos eliminar el mismo.*/
+
+delete diccionario['estudiante'];
+console.log(diccionario);
 
 
 
