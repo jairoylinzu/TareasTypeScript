@@ -51,11 +51,7 @@ function registrarUsuario() {
           console.log('El usuario o el correo electrónico ingresados ya existen. Por favor ingresa otros datos.');
           registrarUsuario();
           return;
-        }
-
-        // Guardar el usuario en la estructura de datos
-        usuarios[nombreUsuario] = {
-          correo,
-          contrasena
-        };
-        console.log('Usuario registrado con éxito.');
+         }
+       }
+      
+  

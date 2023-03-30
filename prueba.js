@@ -40,3 +40,4 @@ console.log("NOT !");
 var q = false, let, r = true;
 console.log("not false = ".concat(!q));
 console.log("not true = ".concat(!r));
+
